@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fenix&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --sButton-alt: #282abc;
+  --sButton: #282981;
+  --sText: whitesmoke;
+  --sBackground: whitesmoke;
+  --sBackground-shade: rgb(210, 210, 210);
+  --sBackground-alt: linear-gradient(90deg, hsl(0, 0%, 3%), hsl(0, 0%, 0%));
+  --headerT: #282981;
+  --headerT-alt: #0600F8;
+  --headerT-alt: #282981;
+  --accent: rgb(233, 72, 72);
+  --black: black;
+  --background: hsl(0, 0%, 9%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  max-width: 1900px;
+  margin: auto;
+}
+
+#shot-img {
+  height: 100vh;
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0px);
+  }
+}
